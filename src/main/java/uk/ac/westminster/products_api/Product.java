@@ -10,4 +10,8 @@ public class Product {
         this.name = name;
         this.price = price;
     }
+
+    public long getId() {return id;}
+    public String getName() {return name;}
+    public double getPrice() {return price;}
 }

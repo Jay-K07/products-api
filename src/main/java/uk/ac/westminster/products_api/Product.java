@@ -1,9 +1,9 @@
 package uk.ac.westminster.products_api;
 
 public class Product {
-    public long id;
-    public String name;
-    public double price;
+    private long id;
+    private String name;
+    private double price;
 
     public Product(Long id, String name, double price){
         this.id = id;

@@ -1,4 +1,4 @@
-'''mermaid
+```mermaid
 classDiagram
     class Product{
         -Long id
@@ -10,4 +10,4 @@ classDiagram
         +getName() String
         +getPrice() double
     }
-'''
+```

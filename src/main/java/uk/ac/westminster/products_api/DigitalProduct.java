@@ -8,11 +8,11 @@ public class DigitalProduct extends Product {
     //no-arg constructor - jackson needs this to build
     //an object from an incoming JSON request body
     public DigitalProduct() {
-
     }
 
-    public DigitalProduct (Long id, String name, double price, String downloadUrl,double fileSizeMB){
-        //super(id,name,price); // has to be first statement
+    public DigitalProduct (Long id, String name, double price,
+                           String downloadUrl,double fileSizeMB){
+        super(id,name,price); // has to be first statement
         this.downloadUrl = downloadUrl;
         this.fileSizeMB = fileSizeMB;
     }
@@ -23,5 +23,13 @@ public class DigitalProduct extends Product {
 
     public double getFileSizeMB(){
         return fileSizeMB;
+    }
+
+    public void setDownloadUrl(String downloadUrl){
+        this.downloadUrl = downloadUrl;
+    }
+
+    public void setFileSizeMB(double fileSizeMB){
+        this.fileSizeMB = fileSizeMB;
     }
 }

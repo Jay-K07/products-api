@@ -4,6 +4,9 @@ public class Product {
     private Long id;
     private String name;
     private double price;
+    //required by jackson to deserialise JSON into an object
+    //without, @requestbody fails at runtime for this class
+    // and for every subclass that calls super
 
     public Product() {}
 

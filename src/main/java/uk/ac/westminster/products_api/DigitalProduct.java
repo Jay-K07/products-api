@@ -12,7 +12,7 @@ public class DigitalProduct extends Product {
     }
 
     public DigitalProduct (Long id, String name, double price, String downloadUrl,double fileSizeMB){
-        super(id,name,price); // has to be first statement
+        //super(id,name,price); // has to be first statement
         this.downloadUrl = downloadUrl;
         this.fileSizeMB = fileSizeMB;
     }

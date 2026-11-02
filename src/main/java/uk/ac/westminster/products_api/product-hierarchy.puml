@@ -1,0 +1,26 @@
+@startuml
+class Product {
+ - id : Long
+ - name : String
+ - price : double
+ + getId() : Long
+ + getName() : String
+ + getPrice() : double
+}
+class DigitalProduct {
+ - downloadUrl : String
+ - fileSizeMB : double
+ + getDownloadUrl() : String
+ + getFileSizeMB() : double
+}
+class PhysicalProduct {
+ - weightKg : double
+ - dimensions : String
+ + getWeightKg() : double
+ + getDimensions() : String
+}
+' The hollow triangle sits at the PARENT end.
+' In PlantUML syntax the parent is written on the LEFT of <|--
+Product <|-- DigitalProduct
+Product <|-- PhysicalProduct
+@enduml
